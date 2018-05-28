@@ -1,0 +1,74 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceFolder}/web"
+        },
+        {
+            "name": ".NET Core Launch (idserver)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildidserver",
+            "program": "${workspaceFolder}/idserver/bin/Debug/netcoreapp2.0/idserver.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/idserver",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            // "launchBrowser": {
+            //     "enabled": true,
+            //     "args": "${auto-detect-url}",
+            //     "windows": {
+            //         "command": "cmd.exe",
+            //         "args": "/C start ${auto-detect-url}"
+            //     },
+            //     "osx": {
+            //         "command": "open"
+            //     },
+            //     "linux": {
+            //         "command": "xdg-open"
+            //     }
+            // },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/idserver/Views"
+            }
+        },
+        {
+            "name": ".NET Core Launch (modellflieger)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildmodellflieger",
+            "program": "${workspaceFolder}/modellflieger/bin/Debug/netcoreapp2.0/modellflieger.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/modellflieger",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            // "launchBrowser": {
+            //     "enabled": true,
+            //     "args": "${auto-detect-url}",
+            //     "windows": {
+            //         "command": "cmd.exe",
+            //         "args": "/C start ${auto-detect-url}"
+            //     },
+            //     "osx": {
+            //         "command": "open"
+            //     },
+            //     "linux": {
+            //         "command": "xdg-open"
+            //     }
+            // },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/modellflieger/Views"
+            }
+        }
+    ]
+}
