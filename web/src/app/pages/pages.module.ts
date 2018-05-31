@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AtomsModule } from '../atoms/atoms.module';
 import { MoleculesModule } from '../molecules/molecules.module';
@@ -10,6 +11,7 @@ import { ServicesModule } from '../services/services.module';
 @NgModule({
   imports: [
     CommonModule,
+    NgbModule,
     AtomsModule,
     MoleculesModule,
     OrganismsModule,
@@ -23,7 +25,7 @@ import { ServicesModule } from '../services/services.module';
 
   ],
   entryComponents: [
-    
+
   ]
 })
 export class PagesModule { }
