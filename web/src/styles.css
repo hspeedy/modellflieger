@@ -26,3 +26,11 @@
   font-family: "merriweather";
   src: url("assets/fonts/merriweather/Merriweather-Regular.ttf");
 }
+
+.app-bar {
+  background-color: blue;
+}
+
+.burger-menu-button {
+  background-color: lightblue;
+}

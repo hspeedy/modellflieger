@@ -1,0 +1,17 @@
+.app-menu-button {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+}
+
+.app-menu-button img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  margin-top: -35%;
+  margin-left: -35%;
+}
+
+

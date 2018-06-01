@@ -10,6 +10,7 @@
 }
 
 .app-bar-menu-button {
+  position: relative;
   width: 40px;
   height: 100%;
 }
