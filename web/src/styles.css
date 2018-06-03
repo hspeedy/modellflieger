@@ -35,6 +35,10 @@
   background-color: lightblue;
 }
 
-.app-caption-text {
+.app-caption {
   color: #ffffff;
+}
+
+.app-menu {
+  background-color: green;
 }

@@ -5,6 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AtomsModule } from '../atoms/atoms.module';
 import { TemplatesModule } from '../templates/templates.module';
 import { AppBarComponent } from './app-bar/app-bar.component';
+import { AppMenuComponent } from './app-menu/app-menu.component';
 
 @NgModule({
   imports: [
@@ -14,11 +15,13 @@ import { AppBarComponent } from './app-bar/app-bar.component';
     TemplatesModule
   ],
   declarations: [
-    AppBarComponent
+    AppBarComponent,
+    AppMenuComponent
 
   ],
   exports: [
-    AppBarComponent
+    AppBarComponent,
+    AppMenuComponent
 
   ],
   entryComponents: [
