@@ -15,7 +15,16 @@
   height: 100%;
 }
 
+.app-bar-caption {
+  position: relative;
+  width: auto;
+  height: 100%;
+  font-family: "merriweather";
+  font-size: 26px;
+}
+
 .app-bar-free {
+  position: relative;
   width: auto;
   height: 100%;
 }
