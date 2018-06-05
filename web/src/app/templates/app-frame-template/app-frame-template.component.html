@@ -5,7 +5,7 @@
   <div class="app-content">
     <ng-content select="[appcontent]"></ng-content>
   </div>
-  <div class="app-menu">
+  <div class="app-menu" [@slideInOut]="menuState">
     <ng-content select="[appmenu]"></ng-content>
   </div>
 </div>
