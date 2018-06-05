@@ -35,6 +35,10 @@
   background-color: lightblue;
 }
 
+.burger-menu-button:hover {
+  background-color: lightblue;
+}
+
 .app-caption {
   color: #ffffff;
 }
