@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppFrameTemplateComponent } from '../app-frame-template/app-frame-template.component';
 
 @Component({
   selector: 'app-bar-template',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppBarTemplateComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit() {
   }
 
+  ngOnInit() {
+
+  }
 }

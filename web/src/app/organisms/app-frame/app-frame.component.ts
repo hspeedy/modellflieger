@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppFrameService } from '../../services/application/app-frame.service';
 
 @Component({
   selector: 'app-frame',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppFrameComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _appFrameService: AppFrameService) {
+
+  }
 
   ngOnInit() {
+    
+  }
+
+  toggledChanged(toggled: boolean) {
+    if (this._appFrameService.toggleCallback !== undefined) {
+      this._appFrameService.toggleCallback(toggled);
+    }
   }
 
 }

@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AppFrameService } from './application/app-frame.service';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [
-
-  ],
   providers: [
-    
+    AppFrameService
   ]
 })
 export class ServicesModule { }

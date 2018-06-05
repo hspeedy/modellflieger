@@ -1,5 +1,5 @@
 <app-bar-template class="app-bar">
-  <app-menu-button menubutton class="app-menu-item burger-menu-button">
+  <app-menu-button menubutton class="app-menu-item burger-menu-button" (toggled)="toggledChanged($event)">
   </app-menu-button>
   <app-caption caption class="app-menu-item" text="Modellflieger"></app-caption>
 </app-bar-template>
