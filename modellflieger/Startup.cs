@@ -28,7 +28,8 @@ namespace modellflieger
         {
             app.UseAuthentication();
             app.UseMvc();
-
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
         }
     }
 }
