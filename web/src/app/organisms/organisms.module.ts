@@ -7,6 +7,8 @@ import { MoleculesModule } from '../molecules/molecules.module';
 import { TemplatesModule } from '../templates/templates.module';
 import { AppFrameComponent } from './app-frame/app-frame.component';
 import { ServicesModule } from '../services/services.module';
+import { PageHostComponent } from './page-host/page-host.component';
+import { PageHostDirective } from './page-host/page-host.directive';
 
 @NgModule({
   imports: [
@@ -18,10 +20,14 @@ import { ServicesModule } from '../services/services.module';
     ServicesModule
   ],
   declarations: [
-    AppFrameComponent
+    AppFrameComponent,
+    PageHostComponent,
+    PageHostDirective
   ],
   exports: [
-    AppFrameComponent
+    AppFrameComponent,
+    PageHostComponent,
+    PageHostDirective
   ],
   entryComponents: [
 

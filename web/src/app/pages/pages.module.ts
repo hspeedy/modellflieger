@@ -7,6 +7,7 @@ import { MoleculesModule } from '../molecules/molecules.module';
 import { OrganismsModule } from '../organisms/organisms.module';
 import { TemplatesModule } from '../templates/templates.module';
 import { ServicesModule } from '../services/services.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   imports: [
@@ -19,13 +20,13 @@ import { ServicesModule } from '../services/services.module';
     ServicesModule
   ],
   declarations: [
-
+    DashboardComponent
   ],
   exports: [
-
+    DashboardComponent
   ],
   entryComponents: [
-
+    DashboardComponent
   ]
 })
 export class PagesModule { }
