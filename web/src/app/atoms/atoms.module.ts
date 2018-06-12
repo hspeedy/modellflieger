@@ -5,6 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppMenuButtonComponent } from './app-menu-button/app-menu-button.component';
 import { AppCaptionComponent } from './app-caption/app-caption.component';
 import { PageCaptionComponent } from './page-caption/page-caption.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
 
 @NgModule({
   imports: [
@@ -14,12 +15,14 @@ import { PageCaptionComponent } from './page-caption/page-caption.component';
   declarations: [
     AppMenuButtonComponent,
     AppCaptionComponent,
-    PageCaptionComponent
+    PageCaptionComponent,
+    MenuItemComponent
   ],
   exports: [
     AppMenuButtonComponent,
     AppCaptionComponent,
-    PageCaptionComponent
+    PageCaptionComponent,
+    MenuItemComponent
   ],
   entryComponents: [
 

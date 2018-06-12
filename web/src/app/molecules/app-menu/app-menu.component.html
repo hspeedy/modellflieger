@@ -1,2 +1,5 @@
 <div class="app-menu">
+  <div *ngFor="let menuItem of menuItems">
+    <app-menu-item [menuItem]="menuItem"></app-menu-item>
+  </div>
 </div>

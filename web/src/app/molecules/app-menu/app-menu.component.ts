@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppMenuComponent implements OnInit {
 
-  constructor() { }
+  private _menuItems: IMenuItem[];
+
+  constructor() {
+
+  }
 
   ngOnInit() {
+
+  }
+
+  @Input() set menuItems(value: IMenuItem[]) {
+    this._menuItems = value;
+  }
+
+  get menuItems():  IMenuItem[] {
+    return this._menuItems;
   }
 
 }

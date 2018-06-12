@@ -1,7 +1,7 @@
 <app-frame-template>
   <app-bar appbar (toggled)="toggledChanged($event)"> 
   </app-bar>
-  <app-menu appmenu>
+  <app-menu appmenu [menuItems]="menuItems">
   </app-menu>
   <app-page-host appcontent>
   </app-page-host>

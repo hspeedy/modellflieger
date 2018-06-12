@@ -10,11 +10,11 @@ export class AppCaptionComponent implements OnInit {
   private _text: string;
 
   constructor() {
-    
+
   }
 
   ngOnInit() {
-    
+
   }
 
   @Input() set text(value: string) {

@@ -13,7 +13,11 @@ export class AppFrameComponent implements OnInit {
   }
 
   ngOnInit() {
-    
+
+  }
+
+  get menuItems(): IMenuItem[] {
+    return this._appFrameService.menuItems;
   }
 
   toggledChanged(toggled: boolean) {

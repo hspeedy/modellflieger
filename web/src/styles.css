@@ -41,6 +41,8 @@
 
 .app-caption {
   color: #ffffff;
+  font-family: merriweather;
+  font-size: 25px;
 }
 
 .app-menu {
@@ -58,5 +60,14 @@
 }
 
 .page-caption {
-  color: #0000ff;
+  color: blue;
+  font-family: merriweather;
+  font-size: 20px;
 }
+
+.menu-caption {
+  color: #ffffff;
+  font-family: merriweather;
+  font-size: 20px;
+}
+

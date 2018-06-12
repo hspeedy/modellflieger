@@ -8,7 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class AppBarComponent implements OnInit {
 
   @Output() toggled: EventEmitter<boolean> = new EventEmitter();
-  
+
   constructor() {
 
   }
