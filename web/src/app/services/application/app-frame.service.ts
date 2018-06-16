@@ -16,6 +16,9 @@ export class AppFrameService {
   constructor() {
     this._menuItems = [];
     this._menuItems.push(new AppMenuItem('Dashboard', undefined, DashboardComponent));
+    this._menuItems.push(new AppMenuItem('Listen', undefined, undefined, [
+      new AppMenuItem('Telefonliste', undefined, DashboardComponent)
+    ]));
   }
 
   get menuItems(): IMenuItem[] {
@@ -23,6 +26,10 @@ export class AppFrameService {
   }
 
   menuItemClick(menuItem: IMenuItem) {
+    if (menuItem.menuItems !== undefined && 
+        menuItem.menuItems.length > 0) {
+      return;
+    }
     if (this.menuItemClickedCallback !== undefined) {
       if (this.menuItemClickedCallback(menuItem)) {
         this.toggleMenu(false);

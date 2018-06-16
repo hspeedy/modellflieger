@@ -10,6 +10,8 @@ import { AppFrameService } from '../../services/application/app-frame.service';
 })
 export class PageHostComponent implements OnInit, AfterViewInit {
 
+  private _lastComponent: any;
+
   @ViewChild(PageHostDirective) pageHost;
 
   constructor(private _factoryResolver: ComponentFactoryResolver,
@@ -26,18 +28,20 @@ export class PageHostComponent implements OnInit, AfterViewInit {
   }
 
   menuItemClicked(menuItem: IMenuItem): boolean {
-    this.changePage(undefined);
+    this.changePage(menuItem.component);
     return true;
   }
 
   private changePage(component: any) {
-    const viewContainerRef: ViewContainerRef = this.pageHost.viewContainerRef;
+    if (component !== undefined &&  this._lastComponent !== component) {
+      const viewContainerRef: ViewContainerRef = this.pageHost.viewContainerRef;
 
-    viewContainerRef.clear();
-
-    if (component !== undefined) {
+      viewContainerRef.clear();
+      
       const factory = this._factoryResolver.resolveComponentFactory(component);
       const componentRef = viewContainerRef.createComponent(factory);
+
+      this._lastComponent = component;
     }
   }
 
