@@ -11,6 +11,8 @@ export class AppFrameService {
 
   public toggleCallback: ToggleCallback;
 
+  public menuItemClickedCallback: MenuItemClickedCallback;
+
   constructor() {
     this._menuItems = [];
     this._menuItems.push(new AppMenuItem('Dashboard', undefined, DashboardComponent));
@@ -18,5 +20,19 @@ export class AppFrameService {
 
   get menuItems(): IMenuItem[] {
     return this._menuItems;
+  }
+
+  menuItemClick(menuItem: IMenuItem) {
+    if (this.menuItemClickedCallback !== undefined) {
+      if (this.menuItemClickedCallback(menuItem)) {
+        this.toggleMenu(false);
+      }
+    }
+  }
+
+  toggleMenu(toggled: boolean) {
+    if (this.toggleCallback !== undefined) {
+      this.toggleCallback(toggled);
+    }
   }
 }

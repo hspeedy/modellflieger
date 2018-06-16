@@ -21,9 +21,7 @@ export class AppFrameComponent implements OnInit {
   }
 
   toggledChanged(toggled: boolean) {
-    if (this._appFrameService.toggleCallback !== undefined) {
-      this._appFrameService.toggleCallback(toggled);
-    }
+    this._appFrameService.toggleMenu(toggled);
   }
 
 }

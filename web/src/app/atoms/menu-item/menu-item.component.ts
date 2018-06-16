@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { AppFrameService } from '../../services/application/app-frame.service';
 
 @Component({
   selector: 'app-menu-item',
@@ -9,7 +10,7 @@ export class MenuItemComponent implements OnInit {
 
   private _menuItem: IMenuItem;
 
-  constructor() {
+  constructor(private _appFrameService: AppFrameService) {
 
   }
 
@@ -23,6 +24,10 @@ export class MenuItemComponent implements OnInit {
 
   get menuItem(): IMenuItem {
     return this._menuItem;
+  }
+
+  itemClick() {
+    this._appFrameService.menuItemClick(this._menuItem);
   }
 
 }

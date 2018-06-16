@@ -5,6 +5,7 @@ import { AppFrameTemplateComponent } from './app-frame-template/app-frame-templa
 import { AppBarTemplateComponent } from './app-bar-template/app-bar-template.component';
 import { ServicesModule } from '../services/services.module';
 import { PageTemplateComponent } from './page-template/page-template.component';
+import { AppMenuTemplateComponent } from './app-menu-template/app-menu-template.component';
 
 @NgModule({
   imports: [
@@ -15,12 +16,14 @@ import { PageTemplateComponent } from './page-template/page-template.component';
   declarations: [
     AppFrameTemplateComponent,
     AppBarTemplateComponent,
-    PageTemplateComponent
+    PageTemplateComponent,
+    AppMenuTemplateComponent
   ],
   exports: [
     AppFrameTemplateComponent,
     AppBarTemplateComponent,
-    PageTemplateComponent    
+    PageTemplateComponent,
+    AppMenuTemplateComponent
   ]
 })
 export class TemplatesModule { }

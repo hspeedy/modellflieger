@@ -37,10 +37,14 @@ export class AppFrameTemplateComponent implements OnInit, AfterViewInit {
   }
 
   toggle(toggle: boolean) {
-    if (!toggle) {
-      this.menuState = 'out';
+    if (toggle !== undefined) {
+      if (!toggle) {
+        this.menuState = 'out';
+      } else {
+        this.menuState = 'in';
+      }
     } else {
-      this.menuState = 'in';
+      this.menuState = this.menuState === 'out' ? 'in' : 'out';
     }
   }
 }
