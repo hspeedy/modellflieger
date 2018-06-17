@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { AppMenuItem } from './app-menu-item';
 import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
+import { MemberListComponent } from '../../pages/member-list/member-list.component';
+import { WorkingHoursListComponent } from '../../pages/working-hours-list/working-hours-list.component';
+import { FlightControllerListComponent } from '../../pages/flight-controller-list/flight-controller-list.component';
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +19,14 @@ export class AppFrameService {
   constructor() {
     this._menuItems = [];
     this._menuItems.push(new AppMenuItem('Dashboard', undefined, DashboardComponent));
+    this._menuItems.push(new AppMenuItem('Verein', undefined, undefined, [
+      new AppMenuItem('Mitglieder', undefined, DashboardComponent),
+      new AppMenuItem('Verein', undefined, DashboardComponent)
+    ]));
     this._menuItems.push(new AppMenuItem('Listen', undefined, undefined, [
-      new AppMenuItem('Telefonliste', undefined, DashboardComponent)
+      new AppMenuItem('Mitglieder', undefined, MemberListComponent),
+      new AppMenuItem('Flugleiter', undefined, FlightControllerListComponent),
+      new AppMenuItem('Arbeitsstunden', undefined, WorkingHoursListComponent)
     ]));
   }
 
@@ -26,7 +35,7 @@ export class AppFrameService {
   }
 
   menuItemClick(menuItem: IMenuItem) {
-    if (menuItem.menuItems !== undefined && 
+    if (menuItem.menuItems !== undefined &&
         menuItem.menuItems.length > 0) {
       return;
     }

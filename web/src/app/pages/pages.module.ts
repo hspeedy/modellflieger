@@ -8,6 +8,9 @@ import { OrganismsModule } from '../organisms/organisms.module';
 import { TemplatesModule } from '../templates/templates.module';
 import { ServicesModule } from '../services/services.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MemberListComponent } from './member-list/member-list.component';
+import { WorkingHoursListComponent } from './working-hours-list/working-hours-list.component';
+import { FlightControllerListComponent } from './flight-controller-list/flight-controller-list.component';
 
 @NgModule({
   imports: [
@@ -20,15 +23,24 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ServicesModule
   ],
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    MemberListComponent,
+    WorkingHoursListComponent,
+    FlightControllerListComponent
   ],
   exports: [
-    DashboardComponent
+    DashboardComponent,
+    MemberListComponent,
+    WorkingHoursListComponent,
+    FlightControllerListComponent
   ],
   entryComponents: [
-    DashboardComponent
+    DashboardComponent,
+    MemberListComponent,
+    WorkingHoursListComponent,
+    FlightControllerListComponent
   ],
-  schemas:[
+  schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ]
 })
