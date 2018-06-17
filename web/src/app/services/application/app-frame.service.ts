@@ -4,6 +4,8 @@ import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
 import { MemberListComponent } from '../../pages/member-list/member-list.component';
 import { WorkingHoursListComponent } from '../../pages/working-hours-list/working-hours-list.component';
 import { FlightControllerListComponent } from '../../pages/flight-controller-list/flight-controller-list.component';
+import { MembersPageComponent } from '../../pages/members-page/members-page.component';
+import { ClubPageComponent } from '../../pages/club-page/club-page.component';
 
 @Injectable({
   providedIn: 'root'
@@ -20,8 +22,8 @@ export class AppFrameService {
     this._menuItems = [];
     this._menuItems.push(new AppMenuItem('Dashboard', undefined, DashboardComponent));
     this._menuItems.push(new AppMenuItem('Verein', undefined, undefined, [
-      new AppMenuItem('Mitglieder', undefined, DashboardComponent),
-      new AppMenuItem('Verein', undefined, DashboardComponent)
+      new AppMenuItem('Mitglieder', undefined, MembersPageComponent),
+      new AppMenuItem('Verein', undefined, ClubPageComponent)
     ]));
     this._menuItems.push(new AppMenuItem('Listen', undefined, undefined, [
       new AppMenuItem('Mitglieder', undefined, MemberListComponent),

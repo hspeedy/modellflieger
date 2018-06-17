@@ -11,6 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { WorkingHoursListComponent } from './working-hours-list/working-hours-list.component';
 import { FlightControllerListComponent } from './flight-controller-list/flight-controller-list.component';
+import { MembersPageComponent } from './members-page/members-page.component';
+import { ClubPageComponent } from './club-page/club-page.component';
 
 @NgModule({
   imports: [
@@ -26,19 +28,25 @@ import { FlightControllerListComponent } from './flight-controller-list/flight-c
     DashboardComponent,
     MemberListComponent,
     WorkingHoursListComponent,
-    FlightControllerListComponent
+    FlightControllerListComponent,
+    MembersPageComponent,
+    ClubPageComponent
   ],
   exports: [
     DashboardComponent,
     MemberListComponent,
     WorkingHoursListComponent,
-    FlightControllerListComponent
+    FlightControllerListComponent,
+    ClubPageComponent,
+    MembersPageComponent
   ],
   entryComponents: [
     DashboardComponent,
     MemberListComponent,
     WorkingHoursListComponent,
-    FlightControllerListComponent
+    FlightControllerListComponent,
+    ClubPageComponent,
+    MembersPageComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
