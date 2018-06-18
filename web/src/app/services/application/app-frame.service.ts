@@ -21,7 +21,7 @@ export class AppFrameService {
   constructor() {
     this._menuItems = [];
     this._menuItems.push(new AppMenuItem('Dashboard', undefined, DashboardComponent));
-    this._menuItems.push(new AppMenuItem('Verein', undefined, undefined, [
+    this._menuItems.push(new AppMenuItem('Verwaltung', undefined, undefined, [
       new AppMenuItem('Mitglieder', undefined, MembersPageComponent),
       new AppMenuItem('Verein', undefined, ClubPageComponent)
     ]));
@@ -37,8 +37,12 @@ export class AppFrameService {
   }
 
   menuItemClick(menuItem: IMenuItem) {
+    if (menuItem === undefined) {
+      return;
+    }
     if (menuItem.menuItems !== undefined &&
         menuItem.menuItems.length > 0) {
+      menuItem.toggle();
       return;
     }
     if (this.menuItemClickedCallback !== undefined) {

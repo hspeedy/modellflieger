@@ -1,5 +1,7 @@
-<div (click)="itemClick()">
-  <label class="menu-caption">{{menuItem?.caption}}</label>
+<div>
+  <div (click)="itemClick()">
+    <label class="menu-caption">{{menuItem?.caption}}</label>
+  </div>
   <div *ngIf="menuItem !== undefined && menuItem.menuItems !== undefined" style="padding-left: 15px;"> 
     <app-menu-item *ngFor="let subMenuItem of menuItem.menuItems" [menuItem]="subMenuItem">
     </app-menu-item>

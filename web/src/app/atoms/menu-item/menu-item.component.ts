@@ -20,6 +20,9 @@ export class MenuItemComponent implements OnInit {
 
   @Input() set menuItem(value: IMenuItem) {
     this._menuItem = value;
+    if (this._menuItem.menuItems !== undefined && this._menuItem.menuItems.length > 0) {
+      this._menuItem.toggleCallback = this.toggle.bind(this);
+    }
   }
 
   get menuItem(): IMenuItem {
@@ -30,4 +33,7 @@ export class MenuItemComponent implements OnInit {
     this._appFrameService.menuItemClick(this._menuItem);
   }
 
+  toggle() {
+
+  }
 }

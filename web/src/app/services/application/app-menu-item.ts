@@ -1,5 +1,7 @@
 export class AppMenuItem implements IMenuItem {
 
+  public toggleCallback: ToggleCallback;
+
   constructor(private _caption: string,
               private _icon: string,
               private _component?: any,
@@ -21,5 +23,11 @@ export class AppMenuItem implements IMenuItem {
 
   get component(): any {
     return this._component;
+  }
+
+  toggle() {
+    if (this.toggleCallback !== undefined) {
+      this.toggleCallback(true);
+    }
   }
 }
