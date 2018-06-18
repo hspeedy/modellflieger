@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { trigger, state, style, transition, animate} from '@angular/animations';
+
 import { AppFrameService } from '../../services/application/app-frame.service';
 
 @Component({
@@ -18,7 +19,6 @@ import { AppFrameService } from '../../services/application/app-frame.service';
       transition('out => in', animate('400ms ease-in-out'))
     ]),
   ]
-
 })
 export class AppFrameTemplateComponent implements OnInit, AfterViewInit {
 

@@ -42,7 +42,7 @@ export class AppFrameService {
     }
     if (menuItem.menuItems !== undefined &&
         menuItem.menuItems.length > 0) {
-      menuItem.toggle();
+      menuItem.toggle(undefined);
       return;
     }
     if (this.menuItemClickedCallback !== undefined) {

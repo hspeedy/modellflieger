@@ -1,14 +1,32 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { trigger, state, style, transition, animate} from '@angular/animations';
+
 import { AppFrameService } from '../../services/application/app-frame.service';
 
 @Component({
   selector: 'app-menu-item',
   templateUrl: './menu-item.component.html',
-  styleUrls: ['./menu-item.component.css']
+  styleUrls: ['./menu-item.component.css'],
+  animations: [
+    trigger('slideInOut', [
+      state('in', style({
+        height: '*',
+        overflow: 'hidden'
+      })),
+      state('out', style({
+        height: '0px',
+        overflow: 'hidden'
+      })),
+      transition('in => out', animate('400ms ease-in-out')),
+      transition('out => in', animate('400ms ease-in-out'))
+    ]),
+  ]
 })
 export class MenuItemComponent implements OnInit {
 
   private _menuItem: IMenuItem;
+
+  menuState = 'out';
 
   constructor(private _appFrameService: AppFrameService) {
 
@@ -33,7 +51,15 @@ export class MenuItemComponent implements OnInit {
     this._appFrameService.menuItemClick(this._menuItem);
   }
 
-  toggle() {
-
+  toggle(toggle: boolean) {
+    if (toggle !== undefined) {
+      if (!toggle) {
+        this.menuState = 'out';
+      } else {
+        this.menuState = 'in';
+      }
+    } else {
+      this.menuState = this.menuState === 'out' ? 'in' : 'out';
+    }
   }
 }

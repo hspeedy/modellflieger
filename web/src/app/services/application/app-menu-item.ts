@@ -25,9 +25,9 @@ export class AppMenuItem implements IMenuItem {
     return this._component;
   }
 
-  toggle() {
+  toggle(toggle: boolean) {
     if (this.toggleCallback !== undefined) {
-      this.toggleCallback(true);
+      this.toggleCallback(toggle);
     }
   }
 }
