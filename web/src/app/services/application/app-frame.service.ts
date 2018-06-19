@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { AppMenuItem } from './app-menu-item';
 import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
 import { MemberListComponent } from '../../pages/member-list/member-list.component';
