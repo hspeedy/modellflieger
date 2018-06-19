@@ -1,13 +1,14 @@
 <div>
-  <div (click)="itemClick()">
+  <div>
     <img *ngIf="menuItem !== undefined && menuItem.menuItems !== undefined"
          class="menu-icon" 
          src="assets/icons/arrow_right.svg"
+         (click)="itemClick()"
          [@rotateInOut]="menuState">
     <img *ngIf="menuItem !== undefined && menuItem.menuItems === undefined"
          class="menu-icon"
          src="assets/icons/empty.svg">
-    <label class="menu-caption">{{menuItem?.caption}}</label>
+    <label class="menu-caption" (click)="itemClick()">{{menuItem?.caption}}</label>
   </div>
   <div *ngIf="menuItem !== undefined && menuItem.menuItems !== undefined"
        class="menu-subitems"
