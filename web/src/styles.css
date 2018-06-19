@@ -27,16 +27,22 @@
   src: url("assets/fonts/merriweather/Merriweather-Regular.ttf");
 }
 
+@font-face {
+  font-family: "merriweather-bold";
+  src: url("assets/fonts/merriweather/Merriweather-Bold.ttf");
+}
+
 .app-bar {
   background-color: blue;
 }
 
 .burger-menu-button {
-  background-color: lightblue;
+  background-color: darkblue;
+  cursor: pointer;
 }
 
 .burger-menu-button:hover {
-  background-color: lightblue;
+  background-color: cornflowerblue;
 }
 
 .app-caption {
@@ -61,20 +67,22 @@
 
 .page-caption {
   color: blue;
-  font-family: merriweather;
-  font-size: 20px;
+  font-family: merriweather-bold;
+  font-size: 24px;
 }
 
 .menu-caption {
   color: #ffffff;
   font-family: merriweather;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .menu-icon {
   width: 30px;
   height: 30px;
   margin-bottom: 7px;
+  cursor: pointer;
 }
 
 .menu-subitems {
