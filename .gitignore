@@ -2,3 +2,4 @@ idserver/bin/**
 idserver/obj/**
 modellflieger/bin/**
 modellflieger/obj/**
+modellflieger/wwwroot/*

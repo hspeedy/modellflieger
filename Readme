@@ -1,1 +1,3 @@
 dotnet publish -r win-arm -c Release
+dotnet publish -r win-x86 -c Release
+dotnet publish -r win-x64 -c Release

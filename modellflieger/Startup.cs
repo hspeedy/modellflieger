@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using IdentityServer4.AccessTokenValidation;
+//using Microsoft.Extensions.FileProviders;
+//using System.IO;
 
 namespace modellflieger
 {
@@ -30,6 +32,12 @@ namespace modellflieger
             app.UseMvc();
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            // app.UseStaticFiles(new StaticFileOptions
+            // {
+            //     FileProvider = new PhysicalFileProvider(
+            //         Path.Combine(Directory.GetCurrentDirectory(), "wwwroot"))
+            // });
+
         }
     }
 }

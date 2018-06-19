@@ -1,8 +1,17 @@
 <div>
   <div (click)="itemClick()">
+    <img *ngIf="menuItem !== undefined && menuItem.menuItems !== undefined"
+         class="menu-icon" 
+         src="assets/icons/arrow_right.svg"
+         [@rotateInOut]="menuState">
+    <img *ngIf="menuItem !== undefined && menuItem.menuItems === undefined"
+         class="menu-icon"
+         src="assets/icons/empty.svg">
     <label class="menu-caption">{{menuItem?.caption}}</label>
   </div>
-  <div *ngIf="menuItem !== undefined && menuItem.menuItems !== undefined" class="menu-subitems" [@slideInOut]="menuState"> 
+  <div *ngIf="menuItem !== undefined && menuItem.menuItems !== undefined"
+       class="menu-subitems"
+       [@slideInOut]="menuState"> 
     <app-menu-item *ngFor="let subMenuItem of menuItem.menuItems" [menuItem]="subMenuItem">
     </app-menu-item>
   </div>

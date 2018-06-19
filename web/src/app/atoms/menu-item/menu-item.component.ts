@@ -20,6 +20,16 @@ import { AppFrameService } from '../../services/application/app-frame.service';
       transition('in => out', animate('400ms ease-in-out')),
       transition('out => in', animate('400ms ease-in-out'))
     ]),
+    trigger('rotateInOut', [
+      state('in', style({
+        transform: 'rotateZ(90deg)'
+      })),
+      state('out', style({
+        transform: 'rotateZ(0deg)'
+      })),
+      transition('in => out', animate('400ms ease-in-out')),
+      transition('out => in', animate('400ms ease-in-out'))
+    ])
   ]
 })
 export class MenuItemComponent implements OnInit {
