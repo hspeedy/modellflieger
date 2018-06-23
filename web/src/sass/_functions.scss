@@ -1,0 +1,3 @@
+@function scale-dp($scale, $dp) {
+  @return $scale*$dp + px;
+}

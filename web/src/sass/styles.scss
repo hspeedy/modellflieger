@@ -1,4 +1,7 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import './variables';
+@import './mixins';
+@import './functions';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 * {
   -webkit-user-select: none;
@@ -6,7 +9,6 @@
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
-  font-family: app-arial;
 }
 
 * input{
@@ -19,17 +21,17 @@
 
 @font-face {
   font-family: "roboto";
-  src: url("assets/fonts/roboto/Roboto-Regular.ttf");
+  src: url("../assets/fonts/roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "merriweather";
-  src: url("assets/fonts/merriweather/Merriweather-Regular.ttf");
+  src: url("../assets/fonts/merriweather/Merriweather-Regular.ttf");
 }
 
 @font-face {
   font-family: "merriweather-bold";
-  src: url("assets/fonts/merriweather/Merriweather-Bold.ttf");
+  src: url("../assets/fonts/merriweather/Merriweather-Bold.ttf");
 }
 
 .app-bar {
