@@ -15,7 +15,7 @@
 }
 
 .app-menu {
-  width: 300px;
+  @include interpolate((width), 768px, 1920px, $min-app-menu-width, $max-app-menu-width);
   height: 100%;
   position: fixed;
   @include interpolate((top), 768px, 1920px, $min-app-bar-height, $max-app-bar-height);
@@ -28,5 +28,4 @@
   height: 100%;
   @include interpolate((top), 768px, 1920px, $min-app-bar-height, $max-app-bar-height);
   position: fixed;
-  background-color: #FBFBFB;
 }

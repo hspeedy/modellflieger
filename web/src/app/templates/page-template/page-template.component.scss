@@ -8,7 +8,6 @@
 }
 
 .page-caption {
-  font-family: "roboto";
   @include interpolate((font-size), 768px, 1920px, $min-page-caption, $max-page-caption);
   width: 100%;
   @include interpolate((height), 768px, 1920px, $min-page-caption-height, $max-page-caption-height);
