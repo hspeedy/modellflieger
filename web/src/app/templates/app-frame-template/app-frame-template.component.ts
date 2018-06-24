@@ -6,7 +6,7 @@ import { AppFrameService } from '../../services/application/app-frame.service';
 @Component({
   selector: 'app-frame-template',
   templateUrl: './app-frame-template.component.html',
-  styleUrls: ['./app-frame-template.component.css'],
+  styleUrls: ['./app-frame-template.component.scss'],
   animations: [
     trigger('slideInOut', [
       state('in', style({

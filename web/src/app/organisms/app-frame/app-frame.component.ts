@@ -4,7 +4,7 @@ import { AppFrameService } from '../../services/application/app-frame.service';
 @Component({
   selector: 'app-frame',
   templateUrl: './app-frame.component.html',
-  styleUrls: ['./app-frame.component.css']
+  styleUrls: ['./app-frame.component.scss']
 })
 export class AppFrameComponent implements OnInit {
 

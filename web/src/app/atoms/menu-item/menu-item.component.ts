@@ -6,7 +6,7 @@ import { AppFrameService } from '../../services/application/app-frame.service';
 @Component({
   selector: 'app-menu-item',
   templateUrl: './menu-item.component.html',
-  styleUrls: ['./menu-item.component.css'],
+  styleUrls: ['./menu-item.component.scss'],
   animations: [
     trigger('slideInOut', [
       state('in', style({

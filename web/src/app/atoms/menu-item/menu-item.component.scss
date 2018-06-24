@@ -1,0 +1,14 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+
+.menu-caption {
+  @include interpolate((font-size), 768px, 1920px, $min-menu-caption, $max-menu-caption);
+}
+
+.menu-subitems {
+  @include interpolate((padding-left), 768px, 1920px, $min-menu-sub-item, $max-menu-sub-item);
+}
+
+.menu-icon {
+  @include interpolate((width, height), 768px, 1920px, $min-menu-icon, $max-menu-icon);
+}

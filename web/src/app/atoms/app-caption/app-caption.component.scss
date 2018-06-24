@@ -1,0 +1,6 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+
+.app-caption {
+  @include interpolate((margin-left), 768px, 1920px, $min-app-caption-margin, $max-app-caption-margin);
+}
