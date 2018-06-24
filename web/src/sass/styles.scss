@@ -38,6 +38,10 @@
   background-color: blue;
 }
 
+.app-bar-caption {
+  font-family: merriweather;
+}
+
 .burger-menu-button {
   background-color: darkblue;
   cursor: pointer;
@@ -68,23 +72,14 @@
 .page-caption {
   color: blue;
   font-family: merriweather-bold;
-  font-size: 24px;
 }
 
 .menu-caption {
   color: #ffffff;
   font-family: merriweather;
-  font-size: 20px;
   cursor: pointer;
 }
 
 .menu-icon {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 7px;
   cursor: pointer;
-}
-
-.menu-subitems {
-  padding-left: 30px;
 }
