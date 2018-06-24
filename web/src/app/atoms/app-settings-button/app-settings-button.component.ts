@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-settings-button',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-settings-button.component.scss']
 })
 export class AppSettingsButtonComponent implements OnInit {
+
+  @Output() settingsClicked: EventEmitter<void> = new EventEmitter();
 
   constructor() {
 
@@ -15,6 +17,6 @@ export class AppSettingsButtonComponent implements OnInit {
   }
 
   buttonClick() {
-
+    this.settingsClicked.emit();
   }
 }

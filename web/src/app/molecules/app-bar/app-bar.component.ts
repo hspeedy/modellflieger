@@ -8,6 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class AppBarComponent implements OnInit {
 
   @Output() toggled: EventEmitter<boolean> = new EventEmitter();
+  @Output() settingsClicked: EventEmitter<void> = new EventEmitter();
 
   constructor() {
 
@@ -19,5 +20,9 @@ export class AppBarComponent implements OnInit {
 
   toggledChanged(toggled: boolean) {
     this.toggled.emit(toggled);
+  }
+
+  settings() {
+    this.settingsClicked.emit();
   }
 }

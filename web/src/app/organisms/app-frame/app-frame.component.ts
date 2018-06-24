@@ -24,4 +24,8 @@ export class AppFrameComponent implements OnInit {
     this._appFrameService.toggleMenu(toggled);
   }
 
+  settings() {
+    const i = 0;
+  }
+
 }

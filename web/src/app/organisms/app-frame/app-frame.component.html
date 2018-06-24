@@ -1,5 +1,6 @@
 <app-frame-template>
-  <app-bar appbar (toggled)="toggledChanged($event)"> 
+  <app-bar appbar (toggled)="toggledChanged($event)"
+                  (settingsClicked)="settings()"> 
   </app-bar>
   <app-menu appmenu [menuItems]="menuItems">
   </app-menu>
