@@ -1,128 +1,134 @@
-$app-bar-height: 40px;
+// app-bar
+$min-app-bar-height: 30px;
+$max-app-bar-height: 60px;
+$min-app-bar-caption: 20px;
+$max-app-bar-caption: 40px;
 
-// iPad in portrait & landscape
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  {
-  $app-bar-height: 30px;
-}
 
-// iPad in landscape
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-  $app-bar-height: 30px;
-}
 
-// iPad in portrait
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-  $app-bar-height: 30px;
-}
+// // iPad in portrait & landscape
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px)  {
+//   $app-bar-height: 30px;
+// }
 
-// iPad 3 & 4 Media Queries
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 2) { 
-  $app-bar-height: 30px;
-}
+// // iPad in landscape
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (orientation : landscape) {
+//   $app-bar-height: 30px;
+// }
 
-// Retina iPad in landscape
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape)
-and (-webkit-min-device-pixel-ratio: 2) {
-  $app-bar-height: 30px;
-}
+// // iPad in portrait
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (orientation : portrait) {
+//   $app-bar-height: 30px;
+// }
 
-// Retina iPad in portrait
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait)
-and (-webkit-min-device-pixel-ratio: 2) {
-  $app-bar-height: 30px;
-}
+// // iPad 3 & 4 Media Queries
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px)
+// and (-webkit-min-device-pixel-ratio: 2) { 
+//   $app-bar-height: 30px;
+// }
 
-// iPad 1 & 2 in portrait & landscape
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (-webkit-min-device-pixel-ratio: 1){
-  $scale-factor: 0.1;
-}
+// // Retina iPad in landscape
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (orientation : landscape)
+// and (-webkit-min-device-pixel-ratio: 2) {
+//   $app-bar-height: 30px;
+// }
 
-// iPad 1 & 2 in landscape
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape)
-and (-webkit-min-device-pixel-ratio: 1)  {
-  $scale-factor: 1;
-}
+// // Retina iPad in portrait
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (orientation : portrait)
+// and (-webkit-min-device-pixel-ratio: 2) {
+//   $app-bar-height: 30px;
+// }
 
-// iPad 1 & 2 in portrait
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) 
-and (-webkit-min-device-pixel-ratio: 1) {
-  $scale-factor: 1;
-}
+// // iPad 1 & 2 in portrait & landscape
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (-webkit-min-device-pixel-ratio: 1){
+//   $scale-factor: 0.1;
+// }
 
-// iPad mini in portrait & landscape
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1)  {
-  $scale-factor: 1;
-}
+// // iPad 1 & 2 in landscape
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (orientation : landscape)
+// and (-webkit-min-device-pixel-ratio: 1)  {
+//   $scale-factor: 1;
+// }
 
-// iPad mini in landscape
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape)
-and (-webkit-min-device-pixel-ratio: 1)  {
-  $scale-factor: 1;
-}
+// // iPad 1 & 2 in portrait
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (orientation : portrait) 
+// and (-webkit-min-device-pixel-ratio: 1) {
+//   $scale-factor: 1;
+// }
 
-// iPad mini in portrait
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait)
-and (-webkit-min-device-pixel-ratio: 1)  {
-  $scale-factor: 1;
-}
+// // iPad mini in portrait & landscape
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px)
+// and (-webkit-min-device-pixel-ratio: 1)  {
+//   $scale-factor: 1;
+// }
 
-// iPhone X in portrait & landscape
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
-  $scale-factor: 1;
-}
+// // iPad mini in landscape
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (orientation : landscape)
+// and (-webkit-min-device-pixel-ratio: 1)  {
+//   $scale-factor: 1;
+// }
 
-// iPhone X in landscape
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : landscape) {
-  $scale-factor: 1;
-}
+// // iPad mini in portrait
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (orientation : portrait)
+// and (-webkit-min-device-pixel-ratio: 1)  {
+//   $scale-factor: 1;
+// }
 
-// iPhone X in portrait
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) {
-  $scale-factor: 1;
-}
+// // iPhone X in portrait & landscape
+// @media only screen 
+// and (min-device-width : 375px) 
+// and (max-device-width : 812px)
+// and (-webkit-device-pixel-ratio : 3) {
+//   $scale-factor: 1;
+// }
+
+// // iPhone X in landscape
+// @media only screen 
+// and (min-device-width : 375px) 
+// and (max-device-width : 812px) 
+// and (-webkit-device-pixel-ratio : 3)
+// and (orientation : landscape) {
+//   $scale-factor: 1;
+// }
+
+// // iPhone X in portrait
+// @media only screen 
+// and (min-device-width : 375px) 
+// and (max-device-width : 812px) 
+// and (-webkit-device-pixel-ratio : 3)
+// and (orientation : portrait) {
+//   $scale-factor: 1;
+// }

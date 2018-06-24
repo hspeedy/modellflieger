@@ -3,7 +3,7 @@ import { Component, OnInit, Output, EventEmitter, AfterViewInit } from '@angular
 @Component({
   selector: 'app-menu-button',
   templateUrl: './app-menu-button.component.html',
-  styleUrls: ['./app-menu-button.component.css']
+  styleUrls: ['./app-menu-button.component.scss']
 })
 export class AppMenuButtonComponent implements OnInit, AfterViewInit {
 

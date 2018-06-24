@@ -6,7 +6,7 @@ import { AppFrameService } from '../../services/application/app-frame.service';
 @Component({
   selector: 'app-page-host',
   templateUrl: './page-host.component.html',
-  styleUrls: ['./page-host.component.css']
+  styleUrls: ['./page-host.component.scss']
 })
 export class PageHostComponent implements OnInit, AfterViewInit {
 
@@ -37,7 +37,7 @@ export class PageHostComponent implements OnInit, AfterViewInit {
       const viewContainerRef: ViewContainerRef = this.pageHost.viewContainerRef;
 
       viewContainerRef.clear();
-      
+
       const factory = this._factoryResolver.resolveComponentFactory(component);
       const componentRef = viewContainerRef.createComponent(factory);
 

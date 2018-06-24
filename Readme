@@ -28,3 +28,7 @@ powershell -command "C:\startup.ps1"
 3.3. Remote PowerShell
 
 schtasks /create /tn "Startup modellflieger" /tr c:\startup.bat /sc onstart /ru SYSTEM
+
+
+
+http://stephen.io/mediaqueries/#iPhone
