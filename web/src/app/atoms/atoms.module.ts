@@ -6,6 +6,7 @@ import { AppMenuButtonComponent } from './app-menu-button/app-menu-button.compon
 import { AppCaptionComponent } from './app-caption/app-caption.component';
 import { PageCaptionComponent } from './page-caption/page-caption.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
+import { AppSettingsButtonComponent } from './app-settings-button/app-settings-button.component';
 
 @NgModule({
   imports: [
@@ -16,13 +17,15 @@ import { MenuItemComponent } from './menu-item/menu-item.component';
     AppMenuButtonComponent,
     AppCaptionComponent,
     PageCaptionComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    AppSettingsButtonComponent
   ],
   exports: [
     AppMenuButtonComponent,
     AppCaptionComponent,
     PageCaptionComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    AppSettingsButtonComponent
   ],
   entryComponents: [
 
