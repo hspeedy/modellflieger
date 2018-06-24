@@ -1,0 +1,14 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+
+.content-tile {
+  width: 100%;
+}
+.content-tile-content {
+  margin-bottom: 15px;
+  width: 100%;
+  box-shadow: 0px 5px 5px 0px rgba(22, 25, 51, 0.342);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(22, 25, 51, 0.342);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(22, 25, 51, 0.342);
+  @include interpolate((padding), 768px, 1920px, $min-tile-padding-margin, $max-tile-padding-margin);
+}
